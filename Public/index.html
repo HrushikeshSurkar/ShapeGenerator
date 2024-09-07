@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>AI-Powered Image Generator</h1>
+        </header>
+        <div class="main">
+            <div class="main-content">
+                <div class="canvas-wrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="button-container">
+                    <button id="goodImageButton" class="btn color-blue">Good</button>
+                    <button id="saveImageButton" class="btn color-cyan">Save Image</button>
+                </div>
+            </div>
+            <div class="advanced-controls">
+                <h1>Advanced Controls</h1>
+                <div class="control-group">
+                    <label for="totalShapesInput">Total Shapes:</label>
+                    <input type="number" min="1" max="20000" placeholder="total shapes" id="totalShapesInput">
+                </div>
+                <div class="control-group">
+                    <label for="batchSizeInput">Batch Size:</label>
+                    <input type="number" min="1" max="1000" placeholder="render at once" id="batchSizeInput">
+                </div>
+                <div class="control-group">
+                    <h2>Select Shapes:</h2>
+                    <div id="shapeCheckboxes"></div>
+                </div>
+                <button id="generateImageButton" class="btn color-green">Generate Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
